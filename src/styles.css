@@ -1,0 +1,271 @@
+.payment-method {
+  /* border: 1px solid black; */
+  width: 25%;
+  height: 100%;
+  text-align: center;
+}
+.paynow {
+  border: 1px solid black;
+  height: 70vh;
+  width: 80%;
+  margin: 5% auto 0 auto;
+  display: flex;
+  margin-top: 10%;
+  /* box-shadow: 10px 10px 10px #d6d5d5; */
+}
+.payment-details {
+  width: 70%;
+  /* border: 1px solid black; */
+  margin-left: 5%;
+}
+.payment-method ul {
+  list-style: none;
+  margin: 20% 0 0 0%;
+  /* border: 1px solid black; */
+}
+.payment-method ul li {
+  margin-top: 10%;
+  font-size: large;
+  /* border: 1px solid black; */
+  margin: 10% auto auto 10%;
+  width: 60%;
+  padding: 3% 3%;
+  color: rgb(82, 80, 80);
+  transition: all 0.2s ease;
+  font-weight: 600;
+}
+h2 {
+  margin-top: 40%;
+  color: rgb(82, 80, 80);
+  /* color: rebeccapurple; */
+}
+.devider {
+  width: 0.3%;
+  height: 30%;
+  border: 4px soid black;
+  background-color: rebeccapurple;
+  margin: 17% auto;
+  border-radius: 10%;
+}
+.payment-method ul li:hover {
+  color: rebeccapurple;
+  border-left: 2px solid rebeccapurple;
+}
+h3 {
+  margin: 10% 0 0 5%;
+  color: rgb(82, 80, 80);
+}
+.creditcard {
+  /* border: 1px solid black; */
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  color: rgb(48, 48, 48);
+  /* justify-content: space-between; */
+}
+.creditcard input {
+  width: 25%;
+  padding: 1% 1%;
+  margin-left: 4%;
+  /* border: 2px solid rgb(112, 73, 151); */
+  color: rgb(112, 73, 151);
+}
+.credit-inputs {
+  margin: 3% auto 0 3%;
+  /* border: 1px solid black; */
+  width: 100%;
+  border-radius: 5%;
+}
+.creditcard label {
+  margin-left: 4%;
+}
+select {
+  width: 10%;
+  text-align: center;
+  padding: 1%;
+}
+#cvv {
+  width: 10%;
+}
+#months,
+#year {
+  margin-left: 3%;
+}
+#paybutton {
+  background-color: rebeccapurple;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 2% 5%;
+  border-radius: 5%;
+  margin: -50% auto 0 7%;
+  transition: all 0.3s ease;
+}
+#paybutton:hover {
+  font-size: medium;
+}
+span {
+  margin-left: 5%;
+  color: rebeccapurple;
+  font-weight: bold;
+  font-size: x-large;
+}
+h3 {
+  display: block;
+}
+#pm-responsive {
+  display: none;
+}
+.netbanking {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  height: 50%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.bankname {
+  /* border: 1px solid black; */
+  width: 70%;
+  height: 20%;
+  margin: 3% auto 0 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bankname select {
+  width: 30%;
+  height: 60%;
+  text-align: center;
+  margin-top: 2%;
+}
+.bankname label {
+  margin-right: 5%;
+  margin-top: 2%;
+}
+.bankname input {
+  width: 60%;
+  height: 70%;
+  padding-left: 5%;
+  outline: none;
+}
+.upiid {
+  /* border: 1px solid black; */
+  height: 30%;
+  margin: 10% auto 5% auto;
+}
+.upiid input {
+  margin-top: 7%;
+  padding: 1%;
+  margin-left: 4%;
+  width: 40%;
+}
+.upiid label {
+  margin-left: 4%;
+}
+
+@media screen and (max-width: 500px) {
+  .paynow {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+  }
+  .payment-method {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+  }
+  .method-list ul li {
+    width: 100%;
+    font-size: medium;
+    /* border: 4px solid black; */
+    margin: 2%;
+  }
+  .method-list ul {
+    display: flex;
+    flex-direction: row;
+    /* border: black 2px solid;   */
+    width: 90%;
+    margin-top: 4%;
+  }
+  .method-list {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 0%;
+  }
+  .payment-method ul li:hover {
+    color: rebeccapurple;
+    border-left: none;
+    border-bottom: 2px solid rebeccapurple;
+  }
+  h2 {
+    display: none;
+  }
+  h3 {
+    display: block;
+    text-align: left;
+  }
+  #pm-responsive {
+    display: block;
+  }
+  .payment-details {
+    width: 100%;
+    margin: 0;
+  }
+  .creditcard {
+    /* border: 1px solid black; */
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    color: rgb(48, 48, 48);
+    /* justify-content: space-between; */
+  }
+  .creditcard input {
+    width: 60%;
+    padding: 1% 1%;
+    margin: 4%;
+    outline: none;
+  }
+  .credit-inputs {
+    width: 96%;
+  }
+  #paybutton {
+    margin: 13% auto 0 7%;
+    padding: 3% 20%;
+  }
+  select {
+    width: 15%;
+  }
+  #cvv {
+    width: 13%;
+  }
+  .devider {
+    width: 90%;
+    height: 0.2%;
+    background-color: rebeccapurple;
+    margin: 5% auto;
+    border-radius: 10%;
+    /* border: 1px solid black; */
+  }
+  .bankname {
+    width: 90%;
+  }
+  #bankdrop {
+    height: 30%;
+  }
+  .netbanking {
+    margin-bottom: -5%;
+  }
+  .upiid label {
+    margin-left: 9%;
+  }
+  .upiid input {
+    width: 60%;
+    padding: 2%;
+    outline: none;
+  }
+}
